@@ -8,8 +8,8 @@ This document will detail the development and testing of a Proof of Authority (P
 
 ## Node Creation
 Create accounts for two nodes for the network with a separate datadir for each using geth by typing the commands into the Git Bash terminal as shown below:
-'''
+```
 ./geth --datadir node1 account new
 ./geth --datadir node2 account new
-'''
+```
 This will create node1 and node2 folders inside the 'Blockchain-Tools' folder. 
