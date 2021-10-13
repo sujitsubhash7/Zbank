@@ -74,3 +74,20 @@ Figure 5. Node 2 Mining
 
 ## Test Transaction between the Nodes
 
+![MyCrypto App](/Screenshots/step4.JPG)
+Figure 6. MyCrypto Desktop Application
+
+![Keystore](/Screenshots/step4a.JPG)
+Figure 7. Node 1 Keystore
+
+![Account Balance](/Screenshots/step4b.JPG)
+Figure 8. Account Balance
+
+![Account Balance](/Screenshots/step4b.JPG)
+Figure 8. Account Balance
+
+Copy the node 2 address including the 0x from the notepad and enter an amount for the test transaction
+
+![Send ETH](/Screenshots/sendETH.JPG)
+Figure 9. Initiate Transfer to Node 2
+
