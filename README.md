@@ -71,3 +71,6 @@ Figure 4. Nodes Initialization and Node 1 Mining
 
 ![Node Initialization](/Screenshots/step3.JPG)
 Figure 5. Node 2 Mining
+
+## Test Transaction between the Nodes
+
