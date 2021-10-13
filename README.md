@@ -32,12 +32,33 @@ cd to the **Blockchain-Tools** folder in the git bash terminal and type `.\puppe
 7) Select no for the next prompt to keep the genesis cleaner. 
 
 ![Genesis Block Creation Part1](/Screenshots/step1a.JPG)
-**Figure 1.Genesis Block Creation Part1**
+Figure 1. Genesis Block Creation Part1
 
 8) Specify your chain ID. You will need this later to connect the custom network on the MyCrypto App. After this step the genesis configuration is stored in your local home directory.
 9) Next select the "Manage existing genesis" and  "Export genesis configurations" options in the prompts as shown in Figure 2. 
 
 ![Genesis Block Configuration](/Screenshots/step1b.JPG)
-**Figure 2.Genesis Block Configuration**
+Figure 2. Genesis Block Configuration
 
+10) This will fail to create two of the files, but you only need `networkname.json`. See Figure 3.
 
+![Files Created](/Screenshots/step1b2.JPG)
+Figure 3. pups.json file
+
+## Node Initialization and Mining
+
+Using geth, initialize each node with the new `networkname.json` as shown in Figure 4.
+```
+./geth --datadir node1 init networkname.json
+./geth --datadir node2 init networkname.json
+```
+The nodes can now be used to begin mining blocks.
+
+To beging mining on node 1 run the following command. See Figure 4 for reference.
+```
+./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
+```
+Copy the enode generated into a nodepad as we will need this to mine node 2.
+
+![Node Initialization](/Screenshots/step2.JPG)
+Figure 4. Nodes Initialization and Node 1 Mining
