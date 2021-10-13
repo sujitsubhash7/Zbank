@@ -30,5 +30,6 @@ cd to the **Blockchain-Tools** folder in the git bash terminal and type `.\puppe
 5) Copy the addresses of node 1 and node 2 from the notepad and enter in sequence when prompted to enter the accounts that need to be sealed.
 6) Copy the addresses of the nodes that need to be prefunded. As we are testing the transaction from node 1 to node 2, we will only prefund node 1. 
 7) Select no for the next prompt to keep the genesis cleaner. 
-8) 
+
+![Genesis Block Creation Part1](/Screenshots/step1a.JPG)
 
