@@ -91,3 +91,12 @@ Copy the node 2 address including the 0x from the notepad and enter an amount fo
 ![Send ETH](/Screenshots/sendETH.JPG)
 Figure 9. Initiate Transfer to Node 2
 
+![Confirm Transfer](/Screenshots/confirm1.JPG)
+Figure 10. Confirm Transfer to Node 2
+
+change wallet and login using keystore file of node 2. See the received ETH from node 1.
+
+![Received ETH](/Screenshots/receivedETH.JPG)
+Figure 11. See Received ETH in Node 2
+
+
