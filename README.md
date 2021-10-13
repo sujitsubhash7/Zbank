@@ -18,7 +18,7 @@ Be sure to copy the public of the key for both nodes onto a notepad as you will 
 
 This will create node1 and node2 folders inside the 'Blockchain-Tools' folder. 
 
-## Genesis Block Creation 
+## Genesis Block Creation and Configuration
 
 The genesis block will be created using puppeth, which is a tool buddled from the **Go Ethereum** bundle. This is the first step of the blockchain as the genesis block is the first block on which additional blocks can be added. 
 
@@ -32,4 +32,12 @@ cd to the **Blockchain-Tools** folder in the git bash terminal and type `.\puppe
 7) Select no for the next prompt to keep the genesis cleaner. 
 
 ![Genesis Block Creation Part1](/Screenshots/step1a.JPG)
+**Figure 1.Genesis Block Creation Part1**
+
+8) Specify your chain ID. You will need this later to connect the custom network on the MyCrypto App. After this step the genesis configuration is stored in your local home directory.
+9) Next select the "Manage existing genesis" and  "Export genesis configurations" options in the prompts as shown in Figure 2. 
+
+![Genesis Block Configuration](/Screenshots/step1b.JPG)
+**Figure 2.Genesis Block Configuration**
+
 
