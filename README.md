@@ -22,4 +22,13 @@ This will create node1 and node2 folders inside the 'Blockchain-Tools' folder.
 
 The genesis block will be created using puppeth, which is a tool buddled from the **Go Ethereum** bundle. This is the first step of the blockchain as the genesis block is the first block on which additional blocks can be added. 
 
-cd to the **Blockchain-Tools** folder in the git bash terminal and type `.\puppeth`
+cd to the **Blockchain-Tools** folder in the git bash terminal and type `.\puppeth`, which will show a prompt asking you to name the network. We named the network 'pups'. Follow the promts shown below and as shown in Figure 1. 
+1) Name the network
+2) Type 2 to pick the Configure new genesis option, then 1 to Create new genesis from scratch
+3) Type 2 to choose the Clique (Proof of Authority) consensus algorithm
+4) Select the number of seconds each block should take. You can hit enter to select the default period of 15 seconds.
+5) Copy the addresses of node 1 and node 2 from the notepad and enter in sequence when prompted to enter the accounts that need to be sealed.
+6) Copy the addresses of the nodes that need to be prefunded. As we are testing the transaction from node 1 to node 2, we will only prefund node 1. 
+7) Select no for the next prompt to keep the genesis cleaner. 
+8) 
+
