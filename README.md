@@ -47,18 +47,27 @@ Figure 3. pups.json file
 
 ## Node Initialization and Mining
 
-Using geth, initialize each node with the new `networkname.json` as shown in Figure 4.
+1) Using geth, initialize each node with the new `networkname.json` as shown in Figure 4.
 ```
 ./geth --datadir node1 init networkname.json
 ./geth --datadir node2 init networkname.json
 ```
 The nodes can now be used to begin mining blocks.
 
-To beging mining on node 1 run the following command. See Figure 4 for reference.
+2) To beging mining on node 1 run the following command. See Figure 4 for reference.
 ```
 ./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
 ```
-Copy the enode generated into a nodepad as we will need this to mine node 2.
+3) Copy the enode generated into a nodepad as we will need this to mine node 2.
 
 ![Node Initialization](/Screenshots/step2.JPG)
 Figure 4. Nodes Initialization and Node 1 Mining
+
+4) Open a new terminal window and run the following command as shown in Figure 5. 
+```
+./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+```
+5) Be sure to check that you are entering the correct node addresses (without Ox) and use the enode copied from step 3.
+
+![Node Initialization](/Screenshots/step3.JPG)
+Figure 5. Node 2 Mining
